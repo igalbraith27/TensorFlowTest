@@ -8,6 +8,7 @@ Y = tf.Variable([-.3], tf.float32)
 node1 = tf.placeholder(tf.float32)
 
 model_lin = X * node1 + Y
+model_lin2 = Y * node1 + X
 
 node2 = tf.placeholder(tf.float32)
 
