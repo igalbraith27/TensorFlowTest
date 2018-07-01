@@ -8,7 +8,7 @@ node2 = tf.constant(4.0)
 sesh = tf.Session()
 node3 = node1 * node2
 
-with tf.Session as sesh:
+with tf.Session() as sesh:
     output = sesh.run([node1,node2])
     print(output)
     output = sesh.run(node3)

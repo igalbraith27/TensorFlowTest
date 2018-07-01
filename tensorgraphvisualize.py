@@ -6,8 +6,8 @@ node2 = tf.constant(4.0)
 
 
 sesh = tf.Session()
-node3 = a * b
+node3 = node1 * node2
 File_Writer = tf.summary.FileWriter("C:\\Users\\Ian\\Documents\\GitHub\\TensorFlowTest\\TensorFlowTest\\graph", sesh.graph)
-with tf.Session as sesh:
+with tf.Session() as sesh:
     output = sesh.run(node3)
     print(output)
