@@ -15,8 +15,19 @@ node2 = tf.placeholder(tf.float32)
 dela_sq = tf.square(model_lin - y)
 loss = tf.reduce_sum(dela_sq)
 
+## OPTIMIZE:
+optimizer = tf.train.GradientDescentOptimizer(0.01)
+train = optimizer.minimize(loss)
+
 #Init
 sesh = tf.Session()
 sesh.run(tf.global_variables_initializer())
 
-print(sesh.run(model_lin, {node1:[1, 2, 3, 4] node2:[0, -1, -2, -3]}))
+#run
+for x in range(1000):
+    sesh.run(model_lin, {node1:[1, 2, 3, 4] node2:[0, -1, -2, -3]})
+
+
+print(X)
+print(Y)
+#print(sesh.run(model_lin, {node1:[1, 2, 3, 4] node2:[0, -1, -2, -3]}))
