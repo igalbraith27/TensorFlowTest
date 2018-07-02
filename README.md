@@ -1,2 +1,3 @@
 # TensorFlowTest
-Working with tensor flow.
+Working with tensor flow.  
+Currently just preforming simple tests.
