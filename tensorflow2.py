@@ -21,6 +21,7 @@ train = optimizer.minimize(loss)
 
 #Init
 sesh = tf.Session()
+init = tf.global_variables_initializer();
 sesh.run(tf.global_variables_initializer())
 
 #run
