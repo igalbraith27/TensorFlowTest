@@ -1,8 +1,8 @@
 import tensorflow as tf
 
 # Model Params
-X = tf.Variable([.2], tf.float32)
-Y = tf.Variable([-.2], tf.float32)
+X = tf.Variable([.3], tf.float32)
+Y = tf.Variable([-.3], tf.float32)
 
 #Input/Outputs
 node1 = tf.placeholder(tf.float32)
